@@ -88,3 +88,34 @@ a {
     a:hover {
         color: #999;
     }
+
+/* Media query for viewports less than 800px*/
+
+/* Default layout styles */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.main-content {
+    width: 80%;
+}
+
+/* Responsive layout styles */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
