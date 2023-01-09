@@ -1,59 +1,90 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body font */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
+/* Set header styles */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
 }
 
-header h1 {
-  margin: 0;
-}
+    /* Set header text styles */
+    header h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
+    /* Set header navigation styles */
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+        header nav ul li {
+            margin-left: 1rem;
+        }
 
-nav li {
-  margin: 0 10px;
-}
+            header nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.25rem;
+                transition: color 0.2s;
+            }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
+                header nav ul li a:hover {
+                    color: #eee;
+                }
 
+/* Set main content styles */
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
+/* Set section styles */
 section {
-  margin: 20px 0;
+    margin-bottom: 2rem;
 }
 
-section h2 {
-  margin: 0 0 10px;
-  font-size: 24px;
+    /* Set section heading styles */
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+/* Set paragraph styles */
+p {
+    margin-bottom: 1rem;
 }
 
-section p {
-  margin: 0 0 20px;
-  font-size: 16px;
-  line-height: 1.5;
+/* Set link styles */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
 }
+
+    a:hover {
+        color: #999;
+    }
