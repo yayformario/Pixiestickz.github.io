@@ -89,6 +89,23 @@ a {
         color: #999;
     }
 
+/* Keygrame animation to animate position of an element*/
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-element {
+    animation: slideInFromLeft 0.5s forwards;
+}
+
+
+
 /* Media query for viewports less than 800px*/
 
 /* Default layout styles */
