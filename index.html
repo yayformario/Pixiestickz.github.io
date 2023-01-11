@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mario Huerta</title>
-    <!-- Importing from css file-->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link the styles css file-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Added Fonts from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Pasted version 6.2.1 from font awesome cdn; lets us get icons from font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    
 </head>
-<body>
-    <header>
-        <h1>Software Engineer Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/experience">Experience</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/skills">Skills</a></li>
-                <li><a href="/education">Education</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+
+<!-- create a class of main content-->
+<body class = "main-content">
+    <!-- initialize header with 4 classes: section, sec1, header, active -->
+    <header class = "section sec1 header active">
+        <!-- testing out instagram icon-->
+        <i class="fa-brands fa-instagram"></i>
     </header>
+    <!-- Initialize a main-->
     <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Work in progress c:
-            </p>
+        <!-- We are going to initialize 5 total sections -->
+        <section class="section sec2 about"></section>
+        <section class="section sec3 portfolio"></section>
+        <section class="section sec4 blogs"></section>
+        <section class="section sec5 contact"></section>
+    </main>
+</body>
+</html>
