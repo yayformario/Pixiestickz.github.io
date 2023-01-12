@@ -155,6 +155,17 @@ section{
     //Center on the y axis
     transform: translateY(-50%);
 
+    //Style active button
+    .active-btn{
+        //Add a color and transition speed
+        background-color: var(--color-secondary) !important;
+        transition: var(--transition-speed);
+
+        //change the color of the icon
+        i{
+            color: var(--color-white) !important;
+        }
+    }
     //Target the control class
     .control{
         padding: 1rem;
@@ -176,6 +187,16 @@ section{
         //implement box shadow
         box-shadow: var(--box-shadow-1);
 
+        //sass allows you to nest elements
+
+        //Resize and add color to icon (i)
+        i {
+            font-size: 1.2rem;
+            color: var(--color-gray-2);
+
+            //pointer events reacts to clicks - none for now
+            pointer-events: none;
+        }
 
     }
     
