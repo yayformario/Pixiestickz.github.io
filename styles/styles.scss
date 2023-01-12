@@ -22,6 +22,9 @@
     --color-gray-6: #12181b;
     --br-sm-2: 14px;
 
+    //Variables for transition delay
+    --transition-speed: all .4s ease-in-out;
+
 }//end root
 
 body{
@@ -38,7 +41,7 @@ body{
     color: var(--color-white);
 
     //set transition
-    transition: all .4s ease-in-out;
+    transition: var(--transition-speed);
 
 }//end body
 
@@ -71,3 +74,93 @@ section{
     top: 0;
     padding: 3rem 18rem;
 }//end section
+
+//Section class
+.section {
+    //Default, we want these to be off screen; hence -100%
+    transform: translateY(-100%) scale(0);
+    transition: var(--transition-speed);
+    background-color: var(--color-primary);
+}
+
+/* FOR LATER:
+    GIVE EACH SECTION A DIFFERENT BACKGROUND COLOR EVENTUALLY
+*/
+
+//Presets for section 1
+.sec1{
+    //We want to display nothing at first
+    display: none;
+
+    //Once we go back to the default place; it scales all the way back to 1
+    //scaling works form 0 to 1
+    transform: translateY(0) scale(1);
+}
+
+//Presets for section 2
+.sec2{
+    //We want to display nothing at first
+    display: none;
+
+    //Once we go back to the default place; it scales all the way back to 1
+    //scaling works form 0 to 1
+    transform: translateY(0) scale(1);
+}
+
+//Presets for section 3
+.sec3{
+    //We want to display nothing at first
+    display: none;
+
+    //Once we go back to the default place; it scales all the way back to 1
+    //scaling works form 0 to 1
+    transform: translateY(0) scale(1);
+}
+
+//Presets for section 4
+.sec4{
+    //We want to display nothing at first
+    display: none;
+
+    //Once we go back to the default place; it scales all the way back to 1
+    //scaling works form 0 to 1
+    transform: translateY(0) scale(1);
+}
+
+//Presets for section 5
+.sec5{
+    //We want to display nothing at first
+    display: none;
+
+    //Once we go back to the default place; it scales all the way back to 1
+    //scaling works form 0 to 1
+    transform: translateY(0) scale(1);
+}
+
+//Target the controls
+.controls{
+    //Parent container
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //Center on the y axis
+    transform: translateY(-50%);
+
+    //Target the control class
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-gray-4);
+        //Width and height have to be the same if you want to move something rounded
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+
+    }
+    
+}
