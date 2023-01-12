@@ -25,6 +25,10 @@
     //Variables for transition delay
     --transition-speed: all .4s ease-in-out;
 
+    //Box shadow
+    //0 Pixels on x axis | 3 pixels y axis | 15 pixels for the glare? | opacity at 0.3
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+
 }//end root
 
 body{
@@ -160,6 +164,18 @@ section{
         width: 55px;
         height: 55px;
         border-radius: 50%;
+
+        //Center icons within circles
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        //Spacing in between icons
+        margin: .7rem 0;
+        
+        //implement box shadow
+        box-shadow: var(--box-shadow-1);
+
 
     }
     

@@ -19,6 +19,7 @@
   --color-gray-6: #12181b;
   --br-sm-2: 14px;
   --transition-speed: all .4s ease-in-out;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
@@ -103,4 +104,9 @@ section {
   width: 55px;
   height: 55px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
 }/*# sourceMappingURL=styles.css.map */
