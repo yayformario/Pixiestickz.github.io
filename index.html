@@ -19,23 +19,22 @@
 <!-- create a class of main content-->
 <body class = "main-content">
     <!-- initialize header with 4 classes: section, sec1, header, active -->
-    <header class = "section sec1 header active">
-        <!-- testing out instagram icon-->
-        <i class="fa-brands fa-instagram"></i>
+    <header class = "section sec1 header active" id = "home">
+
     </header>
     <!-- Initialize a main-->
     <main>
         <!-- We are going to initialize 5 total sections -->
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 blogs"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 blogs" id="blogs"></section>
+        <section class="section sec5 contact" id="contact"></section>
     </main>
 
     <div class="controls">
         <!-- We're going to add the patterns-->
         <!-- in each control, it's going to have a corresponding icon-->
-        <div class="control control-1 active-btn" data-id = "header">
+        <div class="control control-1 active-btn" data-id = "home">
             <!-- Home icon-->
             <i class="fa-sharp fa-solid fa-tent"></i>
         </div>
@@ -66,3 +65,10 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<!--
+    TO DO:
+    Just finished adding active status to all sections getting clicked on
+
+    @45.20
+-->
