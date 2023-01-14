@@ -91,6 +91,10 @@ section {
   background-color: rgb(25, 9, 51);
 }
 
+.active {
+  display: block;
+}
+
 .controls {
   position: fixed;
   z-index: 10;

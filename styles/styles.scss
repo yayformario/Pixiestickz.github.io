@@ -150,6 +150,11 @@ section{
     background-color: rgb(25, 9, 51);
 }
 
+//For displaying sections
+.active{
+    //only want to display whatever element is active
+    display: block;
+}
 //Target the controls
 .controls{
     //Parent container
