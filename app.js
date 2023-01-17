@@ -22,7 +22,7 @@ function pageTransitions () {
             //Current function's class name incremented by active button
             this.className += ' active-btn'
         })
-    }
+    }//end for loop
 
     //Sections Active Class
     //e is for event
@@ -53,7 +53,7 @@ function pageTransitions () {
             element.classList.add('active');
         }
     })
-}
+}//end page transitions
 
 //Page Transitions call
 pageTransitions();
