@@ -288,6 +288,85 @@ section{
             }
             
         }
-    }
+    }//end left header
+
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+
+        //Name class
+        .name{
+            font-size: 3rem;
+            
+            span{
+                color: var(--color-secondary);
+
+            }
+
+            p{
+                margin: 1.5rem 0;
+                line-height: 2rem;
+            }
+        }//end name
+
+    }//end right header
 }//end header content
-//Independent components
+
+/* Independent components */
+
+//button container 
+.btn-con{
+    display: flex;
+    align-self: flex-start;
+}
+//main button
+.main-btn{
+    border-radius: 30px;
+    color: inherit;
+    //Thick text
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    //inside the button
+    .btn-text{
+        padding: 0 2rem;
+    }
+
+    .btn-icon{
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
+    
+    }//end button icon
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: var(--transition-speed);
+        z-index: -1;
+    }
+
+    &:hover{
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            //revert after hovering
+            transform: translateX(0);
+        }
+    }
+
+}//end main btn
