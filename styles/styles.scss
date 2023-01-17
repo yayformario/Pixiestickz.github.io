@@ -27,7 +27,7 @@
 
     //Box shadow
     //0 Pixels on x axis | 3 pixels y axis | 15 pixels for the glare? | opacity at 0.3
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
 
 }//end root
 
@@ -154,7 +154,19 @@ section{
 .active{
     //only want to display whatever element is active
     display: block;
+    animation: scaleAnim 1s ease-in-out;
+
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+    }
 }
+
 //Target the controls
 .controls{
     //Parent container
@@ -179,7 +191,8 @@ section{
         i{
             color: var(--color-white) !important;
         }
-    }
+    }//end active button
+
     //Target the control class
     .control{
         padding: 1rem;
@@ -212,6 +225,6 @@ section{
             pointer-events: none;
         }
 
-    }
+    }//end control
     
-}
+}//end controls
