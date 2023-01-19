@@ -324,6 +324,17 @@ section{
     //Left about
     .left-about{
         padding-right: 5rem;
+
+        p{
+            line-height: 2rem;
+            padding: 1rem;
+            color: var(--color-gray-1);
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
     }//end left about
 
     
@@ -376,7 +387,7 @@ section{
                     //before
                     &::before{
                         content: '';
-                        position: absolute;
+                        position: relative;
                         left: 0;
                         top: 15px;
                         width: 2rem;
@@ -388,6 +399,33 @@ section{
         }
     }//end right about
 }//end container
+
+/*About Stats*/
+.about-skills{
+    padding-bottom: 4rem;
+
+    .skill-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        
+        .skill{
+            display: flex;
+            flex-direction: column;
+
+            .skill-name{
+                text-transform: uppercase;
+                font-weight: 500;
+                color: var(--color-secondary);
+            }
+
+            .skill-detail{
+                color: var(--color-gray-2);
+            }
+        }
+    }
+
+}//end about stats
 
 /* Independent components */
 

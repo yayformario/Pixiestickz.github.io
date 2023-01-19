@@ -216,6 +216,15 @@ section {
 .about-container .left-about {
   padding-right: 5rem;
 }
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-gray-1);
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 .about-container .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -253,12 +262,34 @@ section {
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   top: 15px;
   width: 2rem;
   height: 2px;
   background-color: var(--color-gray-5);
+}
+
+/*About Stats*/
+.about-skills {
+  padding-bottom: 4rem;
+}
+.about-skills .skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-skills .skill-list .skill {
+  display: flex;
+  flex-direction: column;
+}
+.about-skills .skill-list .skill .skill-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+.about-skills .skill-list .skill .skill-detail {
+  color: var(--color-gray-2);
 }
 
 /* Independent components */
