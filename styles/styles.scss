@@ -314,6 +314,81 @@ section{
     }//end right header
 }//end header content
 
+/* About */
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+
+    //Left about
+    .left-about{
+        padding-right: 5rem;
+    }//end left about
+
+    
+    //Right about
+    .right-about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+
+        //about item
+        .about-item{
+            border: 1px solid var(--color-gray-5);
+            border-radius: 5px;
+            transition: var(--transition-speed);
+            box-shadow: 1px 2px 15px rgba(0,0,0,0.1);
+            
+            //Hover
+            &:hover{
+                cursor: default;
+                //Make it move ever so slightly
+                transform: translateY(-5px);
+
+                //add border and shadow box
+                border: 1px solid var(--color-secondary);
+                box-shadow: 1px 4px 15px rgba(0,0,0,0.32);
+            }
+
+            //About text
+            .abt-text{
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+
+                //Large text
+                .large-text{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: var(--color-secondary);
+                }
+
+                //small text
+                .small-text{
+                    padding-left: 1rem;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-size: 1.0rem;
+                    color: var(--color-gray-1);
+                    letter-spacing: 2px;
+
+                    //before
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 15px;
+                        width: 2rem;
+                        height: 2px;
+                        background-color: var(--color-gray-5);
+                    }
+                }
+            }
+        }
+    }//end right about
+}//end container
+
 /* Independent components */
 
 //button container 
