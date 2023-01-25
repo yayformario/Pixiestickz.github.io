@@ -297,10 +297,11 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: #E1B689
 }
 
 .section-bg {
-  background: gray
+  background: #FFFCD9
 }
 
 .section-title {
@@ -484,7 +485,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #88CDF6;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -527,7 +528,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #E1B689;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -837,7 +838,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #FFFCD9;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -909,7 +910,7 @@ section {
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #FFFCD9;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
